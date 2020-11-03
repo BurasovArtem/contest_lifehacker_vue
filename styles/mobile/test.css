@@ -1,0 +1,300 @@
+header {
+	height: 60px;
+	display: flex;
+	position: absolute;
+	width: 100%;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	background: linear-gradient(180deg, #000000 0%, rgba(0, 80, 138, 0) 100%);
+}
+	header .logo_lifehacker { width: 200px; }
+	header .logo_cordiant { width: 250px; }
+	header img { margin: 50px; }
+
+main {
+	display: flex;
+	/*height: 100vh;*/
+	flex-direction: column;
+}
+	main .left_block {
+		width: 100%;
+		display: flex;
+		height: 30vh;
+		flex-direction: column;
+		justify-content: space-between;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+		main .left_block .mirror_elem {
+			display: flex;
+			justify-content: center;
+		}
+			main .left_block .mirror_elem img {
+				width: 400px;
+			}
+		main .left_block .helm {
+			width: 1300px;
+			display: none;
+		}
+	main .right_block {
+		width: 100%;
+		background: linear-gradient(0deg, #00508A 0%, #123A60 96.67%);
+		display: flex;
+		justify-content: space-between;
+		flex-direction: column;
+		min-height: 70vh;
+	}
+		main .right_block .question_content {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			height: 100%;
+			color: white;
+		}
+			main .right_block .question_content .counter_container {
+				display: flex;
+				justify-content: flex-start;
+				width: 70%;
+				margin-top: 100px;
+				font-size: 3em;
+				line-height: 24px;
+			}
+			main .right_block .question_content .title {
+				font-size: 4.5em;
+				font-family: OpenSansBold;
+				margin: 100px 0;
+				text-align: center;
+			}
+			main .right_block .question_content #questions {
+				display: flex;
+				width: 100%;
+				justify-content: flex-start;
+				flex-direction: column;
+			}
+				main .right_block .question_content #question_container {
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					width: 70%;
+				}
+				main .right_block .question_content #question_container #questions .question_item {
+					width: calc(100% - 80px);
+					margin: 30px 10px;
+					padding: 40px 40px;
+					background: rgba(255, 255, 255, 0.2);
+					min-height: 80px;
+					display: flex;
+					align-items: center;
+					cursor: pointer;
+					font-size: 2em;
+					user-select: none;
+					border-radius: 3px;
+				}
+					main .right_block .question_content #question_container #questions .question_item span {
+						font-family: OpenSansBold;
+					}
+					main .right_block .question_content #question_container #questions .question_item:hover {
+						background-color: #7DBFFF;
+						color: #004373;
+					}
+					main .right_block .question_content #question_container #questions .question_item:active {
+						background-color: #FFFFFF;
+						color: #004373;
+					}
+		main .right_block .question_content #result_container  {
+			display: flex;
+			justify-content: flex-start;
+			flex-direction: column;
+			width: 70%;
+		}
+			main .right_block .question_content #result_container button {
+				font-size: 2em;
+				width: 100%;
+				padding: 50px 0;
+				margin-top: 30px;
+			}
+			main .right_block .question_content #result_container #result_title {
+				font-size: 2em;
+				font-family: OpenSansBold;
+				margin: 100px 0;
+				text-align: start;
+				margin-bottom: 24px;
+			}
+			main .right_block .question_content #result_container #result_description {
+				font-size: 2em;
+				margin-bottom: 40px;
+			}
+				main .right_block .question_content #result_container #result_description a {
+					font-family: OpenSansBold;
+					color: #A4EFEC;
+				}
+		main .right_block .right_footer {
+			color: white;
+			display: flex;
+			justify-content: center;
+			margin: 50px;
+			font-size: 2em;
+		}
+			main .right_block .right_footer a {
+				color: #7DBFFF;
+				font-family: OpenSansBold;
+			}
+				main .right_block .right_footer a:active { color: white; }
+		main .right_block .output {
+			flex-direction: column;
+			height: 100%;
+			justify-content: space-between;
+			color: white;
+			align-items: center;
+		}
+			main .right_block .output .top_output_content,
+			main .right_block .output .bottom_output_content {
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				height: 100%;
+
+			}
+			main .right_block .output .top_output_content {
+				border-bottom: 4px solid #FFFFFF;
+				padding: 0 10%;
+			}
+				main .right_block .output .top_output_content #output_title {
+					font-size: 7em;
+					font-family: OpenSansBold;
+					margin-bottom: 24px;
+					margin-top: 100px;
+				}
+				main .right_block .output .top_output_content #output_description {
+					font-size: 3em;
+					font-family: OpenSansBold;
+					margin-bottom: 32px;
+				}
+				main .right_block .output .top_output_content .button_block {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					margin: 50px;
+				}
+					main .right_block .output .top_output_content .button_block .back_button {
+						display: flex;
+						align-items: center;
+						cursor: pointer;
+						order: 2;
+						margin: 30px 0;
+					}
+						main .right_block .output .top_output_content .button_block .back_button .back_icon svg {
+							width: 125px;
+							height: 125px;
+						}
+							main .right_block .output .top_output_content .button_block .back_button:active p {
+								color: white;
+							}
+							main .right_block .output .top_output_content .button_block .back_button:active #reload path {
+								fill: white;
+							}
+						main .right_block .output .top_output_content .button_block .back_button p {
+							margin: 30px;
+							font-size: 2.5em;
+							color: #7DBFFF;
+							font-family: OpenSansBold;
+						}
+					main .right_block .output .top_output_content .button_block .social {
+						display: flex;
+						order: 1;
+					}
+						main .right_block .output .top_output_content .button_block .social a {
+							width: 100px;
+							height: 100px;
+							background-color: #7DBFFF;
+							border-radius: 50%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							cursor: pointer;
+							margin: 10px;
+						}
+							main .right_block .output .top_output_content .button_block .social a:hover {
+								background-color: #FFFFFF;
+							}
+							main .right_block .output .top_output_content .button_block .social a img {
+								width: 50px;
+								height: 50px;
+							}
+			main .right_block .output .bottom_output_content {
+				padding: 0 10%;
+			}
+				main .right_block .output .bottom_output_content #output_promo {
+					font-size: 2.5em;
+					margin-bottom: 40px;
+					margin-top: 100px;
+				}
+					main .right_block .output .bottom_output_content #output_promo a {
+						color: #7DBFFF;
+						font-family: OpenSansBold;
+					}
+					main .right_block .output .bottom_output_content #output_promo .tires_name {
+						font-family: OpenSansBold;
+						font-weight: bold;
+					}
+					main .right_block .output .bottom_output_content #output_promo .promo_code {
+						color: #A4EFEC;						
+						background-color: #002B57;
+						border-radius: 3px;
+						font-family: OpenSansBold;
+						padding: 2px;
+					}
+				main .right_block .output .bottom_output_content #output_time {
+					font-size: 2.5em;
+					margin-bottom: 40px;
+				}
+					main .right_block .output .bottom_output_content #output_time .promo_date {
+						font-size: 1.2em;
+						font-family: OpenSansBold;
+						color: #A4EFEC;
+					}
+				main .right_block .output .bottom_output_content button {
+					width: 100%;
+					font-size: 2em;
+					padding: 50px 0;
+					margin: 50px 0;
+				}
+				main .right_block .output .bottom_output_content .output_footer {
+					display: flex;
+					justify-content: center;
+					flex-direction: column;
+					align-items: center;
+				}
+					main .right_block .output .bottom_output_content .output_footer .team {
+						font-size: 2em;
+						margin: 20px;
+						color: #7DBFFF;
+						cursor: pointer;
+						font-family: OpenSansBold;
+						position: relative;
+					}
+						main .right_block .output .bottom_output_content .output_footer .team:active { color: white; }
+						.team:active .team_popup {
+							display: block;
+						}
+						.team_popup {
+							width: 500px;
+							height: 600px;
+							left: -100px;
+							top: -470px;
+							position: absolute;
+							display: none;
+						}
+					main .right_block .output .bottom_output_content .output_footer .link {
+						color: #FFFFFF;
+						font-size: 2em;
+						margin: 20px;
+						margin-bottom: 100px;
+					}
+						main .right_block .output .bottom_output_content .output_footer .link a {
+							color: #7DBFFF;
+							font-family: OpenSansBold;
+						}
+							main .right_block .output .bottom_output_content .output_footer .link a:active { color: white; }

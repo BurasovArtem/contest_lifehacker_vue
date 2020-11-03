@@ -1,0 +1,98 @@
+body {
+	background: url(../images/background.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+header {
+	height: 10vh;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+	background: linear-gradient(180deg, #000000 0%, rgba(0, 80, 138, 0) 100%);
+}
+	header .logo_lifehacker { width: 100px; }
+	header .logo_cordiant { width: 150px; }
+	header img { margin: 130px; }
+
+main {
+	height: 80vh;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+	main .main_block {
+		width: 630px;
+		height: 480px;
+		background-color: #004373;
+		border: 2px solid #FFFFFF;
+		border-right: none;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+		main .main_block .title {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			border-bottom: 2px solid #FFFFFF;
+			height: 155px;
+		}
+			main .main_block .title p {
+				color: #FFFFFF;
+				font-size: 40px; 
+			}
+			main .main_block .title p:last-child {
+				font-family: OpenSansBold;
+				text-transform: uppercase;
+				font-size: 60px; 
+			}
+		main .main_block .description {
+			border-top: 2px solid #FFFFFF;
+			height: 315px;
+		}
+			main .main_block .description .text {
+				font-size: 16px;
+				padding: 40px 100px;
+				color: #FFFFFF;
+			}
+				main .main_block .description .text a {
+					color: #7DBFFF;
+					font-family: OpenSansBold;
+				}
+				main .main_block .description .text a:last-child { color: #FFFFFF; }
+			main .main_block .description .start_button { margin-left: 100px; }
+
+footer {
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+}
+	footer div { margin: 130px; }
+	footer .social {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+	}
+		footer .social .item {
+			width: 40px;
+			height: 40px;
+			background-color: #7DBFFF;
+			border-radius: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			margin: 10px;
+		}
+			footer .social .item:hover { background-color: #FFFFFF; }
+	footer .madeby { display: flex;}
+		footer .madeby .text { color: white; }
+		footer .madeby .text a { 
+			color: #7DBFFF;
+			font-family: OpenSansBold;
+		}
+			footer .madeby .text a:active { color: white; }
